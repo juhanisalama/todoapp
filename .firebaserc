@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angulartodoapp-ed1e6": {
+      "hosting": {
+        "todo-app": [
+          "angulartodoapp-ed1e6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angulartodoapp-ed1e6"
+  }
+}

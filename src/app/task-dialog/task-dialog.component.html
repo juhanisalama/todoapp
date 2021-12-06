@@ -1,0 +1,21 @@
+<mat-form-field>
+  <mat-label>Otsikko</mat-label>
+  <textarea matInput [(ngModel)]="data.task.title"></textarea>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Kuvaus</mat-label>
+  <textarea matInput [(ngModel)]="data.task.description"></textarea>
+</mat-form-field>
+<div mat-dialog-actions>
+  <button
+    class="delete-btn"
+    *ngIf="data.enableDelete"
+    mat-button
+    aria-label="Delete"
+    [mat-dialog-close]="{ task: data.task, delete: true }"
+  >
+    Poista
+  </button>
+  <button mat-button (click)="cancel()">Peruuta</button>
+  <button mat-button [mat-dialog-close]="{ task: data.task }">OK</button>
+</div>
